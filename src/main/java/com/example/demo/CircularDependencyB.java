@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class CircularDependencyB {
     private final String name;
-    private CircularDependencyC circularDependencyC;
+    private final CircularDependencyC circularDependencyC;
 
     @Autowired
     public CircularDependencyB(CircularDependencyC circularDependencyC) {
